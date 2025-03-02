@@ -12,8 +12,5 @@
 # print(string.replace("hello","A"))  # for replacing a character or string
 # print(string.index("e"))  # for reaching index of a character in string
 # print(string.replace("e","A"))
-string = "            Hello world hello World           "
-print(string.rstrip())
-print(string.lstrip())
-print(string.strip())
-print(string.replace(" ", ""))
+
+"""Hello python"""
