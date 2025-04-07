@@ -44,11 +44,7 @@ print(name) # Output : anonymous
 This is the last condition where name has to be changed to anonymous is true therefore the available value of name is **anonymous**
 
 ## 3. Comments :
-for single line comments:
+for single line comments use hashtag :
 ```python
 # commented statement
-```
-and for multiline comments use triple quotations as
-```python
-"""multiline comments"""
 ```

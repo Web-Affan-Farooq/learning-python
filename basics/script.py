@@ -9,10 +9,10 @@ class Watcher(FileSystemEventHandler):
         self.process = None
         self.run_script()
 
-    def run_script(self):
-        if self.process:
+    def run_script(self):  # main function for which runs the script
+        if self.process: # If there is process already running on terminal , terminate it 
             self.process.terminate()
-        self.process = subprocess.Popen(["python", self.script])
+        self.process = subprocess.Popen(["python", self.script]) # else run the command "python {YOUR_SCRIPT.py}"
 
     def on_modified(self, event):
         if event.src_path.endswith(".py"):

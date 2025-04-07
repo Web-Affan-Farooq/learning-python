@@ -1,0 +1,45 @@
+# Create a set with 5 numbers. Add a new number to the set. Print the set.
+
+my_set = {1,2,3,4,5}
+my_set.add(6)
+print(my_set)
+
+
+# Try to add a duplicate number to the set. What happens?
+# Answer : Set is a known datatype only contains unique numbers. 
+
+# Use .remove() to delete a number from the set. What if the number doesn’t exist?
+# Answer : It raises a keyError
+
+# Use .discard() to delete a number that is not in the set. What happens?
+# Answer : Returns None
+
+# Use .pop() on a set and print the result and the remaining set.
+my_set = {1,2,3,4}
+my_set.pop()
+print(my_set) # randomly removes any element from set 
+
+# Check if the number 10 is in your set using the in keyword.
+my_set = {1,2,3,4,10}
+print(10 in my_set)
+
+# Convert a list with duplicate values into a set. What happens?
+
+lst = [1,2,3,1,1,1,2]
+print(set(lst))
+
+"""
+Create two sets and find:
+union
+intersection
+difference (set1 - set2)
+symmetric_difference
+"""
+
+set1 = {1,2,3}
+set2 = {4,5,6,2}
+
+print('Union :',set1.union(set2)) 
+print("Intersection : ",set1.intersection(set2)) 
+print("Difference : ", set1.difference(set2)) 
+print("Symmetric : ", set1.symmetric_difference(set2)) 
